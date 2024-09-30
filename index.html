@@ -8,10 +8,10 @@
         body {
             font-family: Arial, sans-serif;
             background-image: url('https://images7.alphacoders.com/136/thumb-1920-1369318.png'); /* URL de la imagen de fondo */
-            background-size: cover; /* Ajustar la imagen para cubrir toda la pantalla */
-            background-position: center; /* Centrar la imagen */
-            background-attachment: fixed; /* Fondo fijo al hacer scroll */
-            color: white; /* Texto blanco */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,15 +20,20 @@
         }
         .container {
             text-align: center;
+            display: flex;
+            flex-direction: column; /* Botones en vertical */
+            align-items: center;
         }
         .social-button {
-            display: inline-block;
-            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centra el texto en el botón */
+            width: 300px;
             margin: 10px;
-            padding: 20px;
+            padding: 15px;
             background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: 0.3s;
             font-size: 18px;
             text-decoration: none;
@@ -36,25 +41,46 @@
         }
         .social-button:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
         /* Colores de cada red social */
         .tiktok { background-color: #010101; color: white; }
         .instagram { background-color: #E4405F; color: white; }
         .pinterest { background-color: #E60023; color: white; }
         .telegram { background-color: #0088cc; color: white; }
-        .telegram-nsfw { background-color: #d9534f; color: white; }
+        .telegram-nsfw {
+            display: flex;
+            justify-content: left; /* Alinea la imagen a la izquierda */
+            background-color: transparent; /* Sin color de fondo, solo la imagen */
+        }
+        .telegram-nsfw img {
+            width: 30px; /* Tamaño de la imagen */
+            margin-right: 15px; /* Espacio entre la imagen y el texto */
+        }
         .facebook { background-color: #3b5998; color: white; }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="https://www.tiktok.com/@tu_usuario" class="social-button tiktok">TikTok</a>
-        <a href="https://www.instagram.com/tu_usuario" class="social-button instagram">Instagram</a>
-        <a href="https://www.pinterest.com/tu_usuario" class="social-button pinterest">Pinterest</a>
-        <a href="https://t.me/tu_usuario" class="social-button telegram">Telegram</a>
-        <a href="https://t.me/nsfw_grupo" class="social-button telegram-nsfw">Telegram NSFW</a>
-        <a href="https://www.facebook.com/tu_usuario" class="social-button facebook">Facebook</a>
+        <a href="https://www.tiktok.com/@tu_usuario" class="social-button tiktok">
+            TikTok
+        </a>
+        <a href="https://www.instagram.com/tu_usuario" class="social-button instagram">
+            Instagram
+        </a>
+        <a href="https://www.pinterest.com/ser6ius/" class="social-button pinterest">
+            Pinterest
+        </a>
+        <a href="https://t.me/ser6iusTelegram" class="social-button telegram">
+            Telegram
+        </a>
+        <!-- Botón de Telegram NSFW con imagen personalizada -->
+        <a href="https://t.me/ser6iusTelegram_NSFW" class="social-button telegram-nsfw">
+            <img src="URL_IMAGEN_NSFW" alt="Telegram NSFW"> Telegram NSFW
+        </a>
+        <a href="https://www.facebook.com/tu_usuario" class="social-button facebook">
+            Facebook
+        </a>
     </div>
 </body>
 </html>
