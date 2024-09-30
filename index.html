@@ -7,7 +7,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-image: url('https://images7.alphacoders.com/136/thumb-1920-1369318.png'); /* URL de la imagen de fondo */
+            background-size: cover; /* Ajustar la imagen para cubrir toda la pantalla */
+            background-position: center; /* Centrar la imagen */
+            background-attachment: fixed; /* Fondo fijo al hacer scroll */
+            color: white; /* Texto blanco */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,32 +26,35 @@
             width: 200px;
             margin: 10px;
             padding: 20px;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             transition: 0.3s;
             font-size: 18px;
             text-decoration: none;
-            color: #000;
+            color: #000; /* Texto negro en los botones */
         }
         .social-button:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 12px rgba(0,0,0,0.2);
         }
-        .whatsapp { background-color: #25D366; color: white; }
+        /* Colores de cada red social */
+        .tiktok { background-color: #010101; color: white; }
         .instagram { background-color: #E4405F; color: white; }
-        .facebook { background-color: #3b5998; color: white; }
+        .pinterest { background-color: #E60023; color: white; }
         .telegram { background-color: #0088cc; color: white; }
-        .telegram NSFW { background-color: #0088cc; color: white; }
+        .telegram-nsfw { background-color: #d9534f; color: white; }
+        .facebook { background-color: #3b5998; color: white; }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="https://wa.me/1234567890" class="social-button whatsapp">WhatsApp</a>
+        <a href="https://www.tiktok.com/@tu_usuario" class="social-button tiktok">TikTok</a>
         <a href="https://www.instagram.com/tu_usuario" class="social-button instagram">Instagram</a>
+        <a href="https://www.pinterest.com/tu_usuario" class="social-button pinterest">Pinterest</a>
+        <a href="https://t.me/tu_usuario" class="social-button telegram">Telegram</a>
+        <a href="https://t.me/nsfw_grupo" class="social-button telegram-nsfw">Telegram NSFW</a>
         <a href="https://www.facebook.com/tu_usuario" class="social-button facebook">Facebook</a>
-        <a href="https://t.me/ser6iusTelegram" class="social-button telegram">Telegram</a>
-        <a href="https://t.me/ser6iusTelegram_NSFW" class="social-button telegram">Telegram NSFW</a>
     </div>
 </body>
 </html>
