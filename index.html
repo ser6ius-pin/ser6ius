@@ -48,16 +48,16 @@
         .instagram { background-color: #E4405F; color: white; }
         .pinterest { background-color: #E60023; color: white; }
         .telegram { background-color: #0088cc; color: white; }
-        .telegram-nsfw {
-            display: flex;
-            justify-content: left; /* Alinea la imagen a la izquierda */
-            background-color: transparent; /* Sin color de fondo, solo la imagen */
-        }
-        .telegram-nsfw img {
-            width: 30px; /* Tamaño de la imagen */
-            margin-right: 15px; /* Espacio entre la imagen y el texto */
-        }
         .facebook { background-color: #3b5998; color: white; }
+        
+        /* Estilos del botón de Telegram NSFW con imagen de fondo */
+        .telegram-nsfw {
+            background-image: url('1371661.png'); /* Reemplaza con la URL de la imagen */
+            background-size: cover; /* La imagen cubre todo el botón */
+            background-position: center;
+            color: white; /* Color de texto en blanco */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para resaltar el texto */
+        }
     </style>
 </head>
 <body>
@@ -68,15 +68,15 @@
         <a href="https://www.instagram.com/tu_usuario" class="social-button instagram">
             Instagram
         </a>
-        <a href="https://www.pinterest.com/ser6ius/" class="social-button pinterest">
+        <a href="https://www.pinterest.com/tu_usuario" class="social-button pinterest">
             Pinterest
         </a>
-        <a href="https://t.me/ser6iusTelegram" class="social-button telegram">
+        <a href="https://t.me/tu_usuario" class="social-button telegram">
             Telegram
         </a>
-        <!-- Botón de Telegram NSFW con imagen personalizada -->
-        <a href="https://t.me/ser6iusTelegram_NSFW" class="social-button telegram-nsfw">
-            <img src="1371661.png" alt="Telegram NSFW"> Telegram NSFW
+        <!-- Botón de Telegram NSFW con imagen de fondo -->
+        <a href="https://t.me/nsfw_grupo" class="social-button telegram-nsfw">
+            Telegram NSFW
         </a>
         <a href="https://www.facebook.com/tu_usuario" class="social-button facebook">
             Facebook
