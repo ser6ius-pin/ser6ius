@@ -22,37 +22,40 @@
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      padding: 1rem;
+      padding: 0.5rem;
     }
 
     h1 {
-      margin-bottom: 0.5rem;
-      font-size: 2rem;
-      color: #d4a017;
+      margin-bottom: 0.25rem;
+      font-size: 1.8rem;
+      color: #f7d559;
       text-shadow: 1px 1px 4px #000;
     }
 
     h2 {
-      margin-bottom: 1.5rem;
-      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
       color: #ffffff;
     }
 
     .button-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      gap: 1rem;
-      width: 100%;
-      max-width: 1000px;
+      grid-template-areas:
+        "btn1 btn2 btn3"
+        ". btn4 btn5";
+      gap: 0.8rem;
+      max-width: 800px;
+      place-items: center;
     }
 
     .anime-button {
       position: relative;
-      background-color: #d4a017;
       border-radius: 1.5rem;
       overflow: hidden;
-      height: 220px;
+      height: 170px;
+      width: 100%;
+      max-width: 240px;
       text-decoration: none;
       color: white;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -64,7 +67,6 @@
 
     .anime-button:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 25px #d4a017, 0 0 40px #d4a017;
     }
 
     .anime-button.glow {
@@ -73,10 +75,10 @@
 
     @keyframes glow {
       from {
-        box-shadow: 0 0 15px #d4a017, 0 0 30px #d4a017;
+        box-shadow: 0 0 15px #f7d559, 0 0 30px #f7d559;
       }
       to {
-        box-shadow: 0 0 30px #d4a017, 0 0 50px #d4a017;
+        box-shadow: 0 0 30px #f7d559, 0 0 50px #f7d559;
       }
     }
 
@@ -107,9 +109,17 @@
     }
 
     .anime-button .bottom-text {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       border-radius: 0 0 1.5rem 1.5rem;
     }
+
+    .button-grid a:nth-child(1) { background-color: #010101; } /* TikTok */
+    .button-grid a:nth-child(2) { background-color: #e60023; } /* Pinterest */
+    .button-grid a:nth-child(3) {
+      background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976);
+    } /* Instagram */
+    .button-grid a:nth-child(4) { background-color: #0088cc; } /* Telegram */
+    .button-grid a:nth-child(5) { background-color: #0088cc; } /* Telegram +18 */
 
     @media (max-width: 600px) {
       h1 {
@@ -117,16 +127,16 @@
       }
 
       h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
 
       .anime-button {
-        height: 180px;
+        height: 140px;
       }
 
       .anime-button .top-text,
       .anime-button .bottom-text {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
       }
     }
   </style>
@@ -136,27 +146,27 @@
   <h2>Thanks for visit my web!</h2>
   <div class="button-grid">
     <a href="Enlace TikTok" class="anime-button">
-      <img src="img1.jpg" alt="Chica Anime TikTok">
+      <img src="img1.webp" alt="Anime chica para TikTok" title="Ir a TikTok - ser6ius_Dojin">
       <div class="top-text">TikTok</div>
       <div class="bottom-text">ser6ius_Dojin</div>
     </a>
     <a href="Enlace Pinterest" class="anime-button glow">
-      <img src="img2.jpg" alt="Chica Anime Pinterest">
+      <img src="img2.webp" alt="Chica anime en Pinterest" title="Explora mi Pinterest - ser6ius_Dojin">
       <div class="top-text">Pinterest</div>
       <div class="bottom-text">ser6ius_Dojin</div>
     </a>
     <a href="Enlace Instagram" class="anime-button">
-      <img src="img3.jpg" alt="Chica Anime Instagram">
+      <img src="img3.webp" alt="Chica anime Instagram" title="Sígueme en Instagram - ser6ius_Dojin">
       <div class="top-text">Instagram</div>
       <div class="bottom-text">ser6ius_Dojin</div>
     </a>
     <a href="Enlace Telegram" class="anime-button">
-      <img src="img4.jpg" alt="Chica Anime Telegram">
+      <img src="img4.webp" alt="Grupo anime en Telegram" title="Únete a Telegram - ser6ius_Dojin">
       <div class="top-text">Telegram</div>
       <div class="bottom-text">ser6ius_Dojin</div>
     </a>
     <a href="Enlace Telegram +18" class="anime-button">
-      <img src="img5.jpg" alt="Chica Anime Telegram +18">
+      <img src="img5.webp" alt="Chica anime sexy para grupo +18" title="Acceso +18 - ser6ius_DojinX">
       <div class="top-text">Telegram</div>
       <div class="bottom-text">ser6ius_DojinX (+18)</div>
     </a>
