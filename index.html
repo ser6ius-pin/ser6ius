@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ser6ius anime zone</title>
+  <title>ser6ius_Dojin</title>
+  <link rel="icon" type="image/png" href="favicon.png" /> <!-- Coloca aquí tu imagen de icono -->
   <style>
     * {
       margin: 0;
@@ -13,7 +14,8 @@
     }
 
     body {
-      background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+      background: url('fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: white;
       display: flex;
       flex-direction: column;
@@ -23,10 +25,16 @@
     }
 
     h1 {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       font-size: 2.5rem;
       color: #ff77cc;
       text-shadow: 1px 1px 4px #000;
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+      color: #ffffff;
     }
 
     .button-grid {
@@ -45,15 +53,29 @@
       height: 300px;
       text-decoration: none;
       color: white;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: space-between;
       box-shadow: 0 10px 20px rgba(0,0,0,0.4);
     }
 
     .anime-button:hover {
       transform: scale(1.05);
+      box-shadow: 0 0 25px #ff77cc, 0 0 40px #ff77cc;
+    }
+
+    .anime-button.glow {
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 15px #ff77cc, 0 0 30px #ff77cc;
+      }
+      to {
+        box-shadow: 0 0 30px #ff77cc, 0 0 50px #ff77cc;
+      }
     }
 
     .anime-button img {
@@ -67,43 +89,69 @@
       opacity: 0.8;
     }
 
-    .anime-button span {
+    .anime-button .top-text,
+    .anime-button .bottom-text {
       position: relative;
       z-index: 2;
       background-color: rgba(0, 0, 0, 0.5);
-      padding: 1rem;
+      padding: 0.5rem 1rem;
       text-align: center;
-      font-size: 1.3rem;
       font-weight: bold;
+    }
+
+    .anime-button .top-text {
+      font-size: 1.1rem;
+      border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    .anime-button .bottom-text {
+      font-size: 1.3rem;
       border-radius: 0 0 1.5rem 1.5rem;
     }
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
 
-      .anime-button span {
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      .anime-button .top-text,
+      .anime-button .bottom-text {
         font-size: 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <h1>Bienvenido a la Zona Anime de Ser6ius</h1>
-  <div class="button-grid">
-    <a href="#" class="anime-button">
-      <img src="img1.jpg" alt="Chica Anime 1">
-      <span>Botón 1</span>
-    </a>
-    <a href="#" class="anime-button">
-      <img src="img3.jpg" alt="Chica Anime 3">
-      <span>Botón 3</span>
-    </a>
-    <a href="#" class="anime-button">
-      <img src="img4.jpg" alt="Chica Anime 4">
-      <span>Botón 4</span>
-    </a>
-  </div>
-</body>
-</html>
+  <h1>ser6ius_Dojin</h1>
+  <h2>Thanks for visit my web!</h2>
+<div class="button-grid">
+  <a href="https://www.tiktok.com/@ser6ius_dojin" target="_blank" class="anime-button">
+    <img src="img1.jpg" alt="Chica Anime TikTok">
+    <div class="top-text">TikTok</div>
+    <div class="bottom-text">ser6ius_Dojin</div>
+  </a>
+  <a href="https://pin.it/1nXzFCIir" target="_blank" class="anime-button">
+    <img src="img2.jpg" alt="Chica Anime Pinterest">
+    <div class="top-text">Pinterest</div>
+    <div class="bottom-text">ser6ius_Dojin</div>
+  </a>
+  <a href="https://www.instagram.com/ser6ius_dojin/" target="_blank" class="anime-button">
+    <img src="img3.jpg" alt="Chica Anime Instagram">
+    <div class="top-text">Instagram</div>
+    <div class="bottom-text">ser6ius_Dojin</div>
+  </a>
+  <a href="https://t.me/+GqqzMX1w3pM1NjU0" target="_blank" class="anime-button">
+    <img src="img4.jpg" alt="Chica Anime Telegram">
+    <div class="top-text">Telegram</div>
+    <div class="bottom-text">ser6ius_Dojin</div>
+  </a>
+  <a href="https://t.me/+Y4FDyY_GQvM5NTU0" target="_blank" class="anime-button">
+    <img src="img5.jpg" alt="Chica Anime Telegram +18">
+    <div class="top-text">Telegram</div>
+    <div class="bottom-text">ser6ius_DojinX (+18)</div>
+  </a>
+</div>
