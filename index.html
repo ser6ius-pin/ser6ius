@@ -14,7 +14,11 @@
     }
 
     body {
-      background: url('1.png') no-repeat center center fixed;
+      background-color: #000;
+      background-image: url('1.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
       background-size: cover;
       color: white;
       display: flex;
@@ -67,6 +71,15 @@
 
     .anime-button:hover {
       transform: scale(1.05);
+      box-shadow: 0 0 20px #fff, 0 0 40px #ff00cc;
+    }
+
+    .anime-button:hover::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 2;
     }
 
     .anime-button.glow {
@@ -96,7 +109,7 @@
     .anime-button .top-text,
     .anime-button .bottom-text {
       position: relative;
-      z-index: 2;
+      z-index: 3;
       background-color: rgba(0, 0, 0, 0.5);
       padding: 0.3rem 0.5rem;
       text-align: center;
@@ -113,13 +126,13 @@
       border-radius: 0 0 1.5rem 1.5rem;
     }
 
-    .button-grid a:nth-child(1) { background-color: #010101; } /* TikTok */
-    .button-grid a:nth-child(2) { background-color: #e60023; } /* Pinterest */
+    .button-grid a:nth-child(1) { background-color: #010101; }
+    .button-grid a:nth-child(2) { background-color: #e60023; }
     .button-grid a:nth-child(3) {
       background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976);
-    } /* Instagram */
-    .button-grid a:nth-child(4) { background-color: #0088cc; } /* Telegram */
-    .button-grid a:nth-child(5) { background-color: #0088cc; } /* Telegram +18 */
+    }
+    .button-grid a:nth-child(4) { background-color: #0088cc; }
+    .button-grid a:nth-child(5) { background-color: #0088cc; }
 
     @media (max-width: 600px) {
       h1 {
@@ -139,37 +152,44 @@
         font-size: 0.85rem;
       }
     }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #ccc;
+    }
   </style>
 </head>
 <body>
   <h1>ser6ius_Dojin</h1>
   <h2>Thanks for visit my web!</h2>
   <div class="button-grid">
-    <a href="Enlace TikTok" class="anime-button">
+    <a href="Enlace TikTok" class="anime-button" target="_blank" rel="noopener noreferrer" aria-label="Ir al perfil de TikTok de ser6ius_Dojin">
       <img src="3.png" alt="Anime chica para TikTok" title="Go to TikTok - ser6ius_Dojin">
       <div class="top-text">TikTok</div>
       <div class="bottom-text">ser6ius_Dojin</div>
     </a>
-    <a href="https://www.pinterest.com/ser6ius_Dojin/" class="anime-button glow">
+    <a href="https://www.pinterest.com/ser6ius_Dojin/" class="anime-button glow" target="_blank" rel="noopener noreferrer" aria-label="Explora mi Pinterest - ser6ius_Dojin">
       <img src="4.png" alt="Chica anime en Pinterest" title="Explore my Pinterest - ser6ius_Dojin">
       <div class="top-text">Pinterest</div>
       <div class="bottom-text">ser6ius_Dojin</div>
     </a>
-    <a href="https://www.instagram.com/ser6ius_dojin/" class="anime-button">
+    <a href="https://www.instagram.com/ser6ius_dojin/" class="anime-button" target="_blank" rel="noopener noreferrer" aria-label="Sígueme en Instagram - ser6ius_Dojin">
       <img src="5.png" alt="Chica anime Instagram" title="Follow me on Instagram - ser6ius_Dojin">
       <div class="top-text">Instagram</div>
       <div class="bottom-text">ser6ius_Dojin</div>
     </a>
-    <a href="https://t.me/ser6iusTelegram" class="anime-button">
+    <a href="https://t.me/ser6iusTelegram" class="anime-button" target="_blank" rel="noopener noreferrer" aria-label="Únete a Telegram - ser6ius_Dojin">
       <img src="6.png" alt="Grupo anime en Telegram" title="Join to Telegram - ser6ius_Dojin">
       <div class="top-text">Telegram</div>
       <div class="bottom-text">ser6ius_Dojin</div>
     </a>
-    <a href="https://t.me/ser6iusTelegram_NSFW" class="anime-button">
+    <a href="https://t.me/ser6iusTelegram_NSFW" class="anime-button" target="_blank" rel="noopener noreferrer" aria-label="Acceso +18 - ser6ius_DojinX">
       <img src="7.png" alt="Chica anime sexy para grupo +18" title="ONLY +18 - ser6ius_DojinX">
       <div class="top-text">Telegram</div>
       <div class="bottom-text">ser6ius_DojinX (+18)</div>
     </a>
   </div>
+  <footer>© 2025 ser6ius_Dojin | Todos los derechos reservados</footer>
 </body>
 </html>
